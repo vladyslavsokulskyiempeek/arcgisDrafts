@@ -1,0 +1,49 @@
+.zoom-btns {
+  float: left;
+  transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
+}
+.button {
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 2em;
+  background-color: #fff;
+  color: #646464;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+}
+.button.circle {
+  border-radius: 50%;
+}
+.button:hover {
+  opacity: 0.8;
+  color: rgba(0, 0, 0, 0.25);
+}
+.button.raised {
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0.2s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.button.raised:active {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  transition-delay: 0s;
+}
+.disable {
+  opacity: 0.8;
+  color: rgba(0, 0, 0, 0.25);
+}
+.disable:hover {
+  opacity: 0.8;
+  color: rgba(0, 0, 0, 0.25);
+}
+.material-icons {
+  font-size: 1.2em;
+  line-height: 50px;
+  user-select: none;
+}
